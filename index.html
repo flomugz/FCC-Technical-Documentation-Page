@@ -1,297 +1,427 @@
 <!DOCTYPE>
 <html>
-<head>
+  <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
- <body>
-<!----Left Nagigation Links------>
-<div class ="left">
-<nav id="navbar">
-<ul>
-  <li><header>PHP Docs</header></li>
-  <li><a href="#Introduction" class="nav-link">Introduction</a></li>
- <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
-  <li><a href="#Variables_and_Types" class="nav-link">Variables and Types</a></li>
-  <li><a href="#Simple_Arrays" class="nav-link">Simple Arrays</a></li>
-  <li><a href="#Arrays_with_Keys" class="nav-link">Arrays with Keys</a></li>
-  <li><a href="#Multidimentional_Arrays" class="nav-link">Multidimentional Arrays</a></li><li><a href="#Strings" class="nav-link">Strings</a></li> 
-  <li><a href="#For_Loops" class="nav-link">For Loops</a></li><li><a href="#While_Loops" class="nav-link">While Loops</a></li>
-  <li><a href="#Functions" class="nav-link">Functions</a></li>
-  <li><a href="#Objects" class="nav-link">Objects</a></li>
-  <li><a href="#Exceptions" class="nav-link">Exceptions</a></li></ul></nav></div>
+  </head>
+  <body>
+  <!----Left Nagigation Links------>
+    <div class ="left">
+      <nav id="navbar">
+      <ul>
+        <li><header>PHP Docs</header></li>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+        <li><a href="#Variables_and_Types" class="nav-link">Variables and Types</a></li>
+        <li><a href="#Simple_Arrays" class="nav-link">Simple Arrays</a></li>
+        <li><a href="#Arrays_with_Keys" class="nav-link">Arrays with Keys</a></li>
+        <li><a href="#Multidimentional_Arrays" class="nav-link">Multidimentional Arrays</a></li>
+	<li><a href="#Strings" class="nav-link">Strings</a></li> 
+        <li><a href="#For_Loops" class="nav-link">For Loops</a></li>
+	<li><a href="#While_Loops" class="nav-link">While Loops</a></li>
+        <li><a href="#Functions" class="nav-link">Functions</a></li>
+        <li><a href="#Objects" class="nav-link">Objects</a></li>
+        <li><a href="#Exceptions" class="nav-link">Exceptions</a></li>
+      </ul>
+      </nav>
+    </div>
 
 <!---- Ebd -Navigation Block------->
 
 <div class="right">
 <main id="main-doc">
-  <section class="main-section" id="Introduction"><header>Introduction</header><article><p>PHP is a popular programming language used for designing web pages. It is an open source scripting language that is executed on the Server with the result returned to the brwowser as plain HTML. It is free to use and download. PHP files include: 
-  <div class="main-list">
-  <ul>
+  <section class="main-section" id="Introduction"><header>Introduction</header>
+    <article><p>PHP is a popular programming language used for designing web pages.
+      It is an open source scripting language that is executed on the Server with the
+      result returned to the brwowser as plain HTML. It is free to use and download.
+      PHP files include: 
+      <div class="main-list">
+        <ul>
     <li> Text, HTML, CSS, JavaScript and PHP Code</li>
     <li>PHP Code is executed on the server and the result is returned to the browser</li>
     <li>PHP files are saved with the ".php" extension.</li>
    </ul></div>
-  </p><p>PHP can be used for web development or as a programming language (create scripts), to covert file from one format to another, transform images, create thumbnails or perform calculations. There is alot that can be done with PHP and this is what makes it a popular programming language. </p></article></section>
+   </p><p>PHP can be used for web development or as a programming language (create scripts),
+     to covert file from one format to another, transform images, create thumbnails or perform
+     calculations. There is alot that can be done with PHP and this is what makes it a popular
+     programming language. </p></article></section>
   
- <!-------Hello World Section---->
+   <!-------Hello World Section---->
   
-  <section class="main-section" id="Hello_World"><header>Hello World</header>
-    
-    <article><p>The best way to learn PHP is to create a small program that outputs <q>Hello World</q>. PHP code is embedded between the <code><&#63php</code> and <code>?></code> tags. The PHP tags can be placed in the body of the HTML page  The following code illustrates a simple PHP file that prints Hello World:<br><br><code>
-&lt;html&gt; <br>
-&lt;head&gt;PHP Code&lt;/head&gt; <br>
-     &lt;body&gt;<br>
-      &lt;?php  <br>echo "Hello World"; <br>?&gt; <br>
-      &lt;/body&gt; <br>
-      &lt;/html&gt;
-     </code><br><br>
-    The key word <q>echo</q> is a built in function that PHP uses to display information to the user. 
-    </p></article></section>
+  <section class="main-section" id="Hello_World">
+    <header>Hello World</header>
+      <article><p>The best way to learn PHP is to create a small program that outputs
+        <q>Hello World</q>. PHP code is embedded between the <code><&#63php</code> and
+        <code>?></code> tags. The PHP tags can be placed in the body of the HTML page  The 
+        following code illustrates a simple PHP file that prints Hello World:<br><br><code>
+        &lt;html&gt; <br>
+        &lt;head&gt;PHP Code&lt;/head&gt; <br>
+        &lt;body&gt;<br>
+        &lt;?php  <br>echo "Hello World"; <br>?&gt; <br>
+        &lt;/body&gt; <br>
+        &lt;/html&gt;
+        </code><br><br>
+        The key word <q>echo</q> is a built in function that PHP uses to display
+        information to the user. 
+        </p>
+      </article>
+ </section>
   
   <!-----Variables and Types--->
   
-  <section class="main-section" id="Variables_and_Types"><header>Variables and Types</header>
-    <article><p>Variables are containers that store different types of information. In PHP, all variables begin with the <code>$</code> sign, which is followed by the name of the variable. PHP supports variables of type:
- <div class="main-list">   
- <ul>
-   <li>boolean</li>
-    <li>float(real numbers)</li>
-   <li>integer(whole numbers)</li>
-   <li>string</li>
-   </ul></div>
-    <br>
-    Variables are declared in PHP using the following syntax:
-    <br>
-    <ode>
-    $a=True; <br>
-    $b=4.0; <br>
-    $c=10;<br>
-    $d="Hello World";  
-    </code>
-    <p>In the syntax above, four variables are defined. The first variable a is a boolean  with value True, b is a float with value 4.0, c is an integerwith value 10 and d is a string with value Hello World. Numbers are declared as is while strings must be enclosed in single quotes or double quotes. </p>
-    </p></article></section>
-<!------Simple Arrays--------->
+  <section class="main-section" id="Variables_and_Types">
+    <header>Variables and Types</header>
+      <article><p>Variables are containers that store different types of information.
+        In PHP, all variables begin with the <code>$</code> sign, which is followed by
+	the name of the variable. PHP supports variables of type:
+        <div class="main-list">   
+          <ul>
+            <li>boolean</li>
+    <       li>float(real numbers)</li>
+            <li>integer(whole numbers)</li>
+            <li>string</li>
+         </ul>
+       </div>
+        <br>
+        Variables are declared in PHP using the following syntax:
+        <br>
+        <ode>
+          $a=True; <br>
+          $b=4.0; <br>
+          $c=10;<br>
+          $d="Hello World";  
+        </code>
+       <p>In the syntax above, four variables are defined. The first variable a is a
+	  boolean with value True, b is a float with value 4.0, c is an integerwith
+	  value 10 and d is a string with value Hello World. Numbers are declared as
+	  is while strings must be enclosed in single quotes or double quotes. </p>
+    </p>
+    </article>
+  </section>
+	  
+   <!------Simple Arrays--------->
 
   <section class="main-section" id="Simple_Arrays"><header>Simple Arrays</header>
-    
-    <article><p>Arrays are variables that can hold more than one variable and displays them in list form. Arrays in PHP are created using the following syntax: <br><br>
-    <code>
-      $number=array(1, 2. 3, 4); 
-      </code>
-    <br><br>
-    Before any item in the list can be used, the array must be created. Items in an array are accessed by their index number. PHP uses zero based induces so the first item in an array will be at index 0 and to access it you would use the following syntax: <br><br>
-    <code>
-      $array_name = [1, 2, 3];
-    </code> (number array)
+    <article><p>Arrays are variables that can hold more than one variable and displays
+      them in list form. Arrays in PHP are created using the following syntax: <br><br>
+        <code>
+          $number=array(1, 2. 3, 4); 
+        </code>
+      <br><br>
+      Before any item in the list can be used, the array must be created. Items in an
+      array are accessed by their index number. PHP uses zero based induces so the first
+      item in an array will be at index 0 and to access it you would use the following 
+      syntax: <br><br>
+        <code>
+          $array_name = [1, 2, 3];
+      </code> (number array)
      <br><code>$array_name=["cats", "dogs", "horses"];</code> (string array) <br><br>
-    To extract an item in one of the arrays above you use the following syntax: <br><br>
-    <code>$array_name[index];</code>
-    </p></article></section>
+     To extract an item in one of the arrays above you use the following syntax: <br><br>
+     <code>$array_name[index];</code>
+     </p>
+    </article>
+  </section>
 
-<!------Arrays with Keys-------->
+ <!------Arrays with Keys-------->
 
-   <section class="main-section" id="Arrays_with_Keys"><header>Arrays with Keys</header><article><p>Arrays that are created as single lists allow items in the array to be accessed through their index. In arrays with keys, the items in the array are accessed through a key. Arrays in PHP are ordered maps where the map is a type that associates values to keys. An array with keys will be represented with the following syntax: <br><br>
-  <code>
-    $student_id = [ <br>
-      "Peter"=> "00011", <br>
-      'Don'=> "22234", <br>
-    ];
+ <section class="main-section" id="Arrays_with_Keys"><header>Arrays with Keys</header>
+   <article><p>Arrays that are created as single lists allow items in the array to be
+     accessed through their index. In arrays with keys, the items in the array are
+     accessed through a key. Arrays in PHP are ordered maps where the map is a type
+     that associates values to keys. An array with keys will be represented with the
+     following syntax: <br><br>
+       <code>
+         $student_id = [ <br>
+         "Peter"=> "00011", <br>
+         'Don'=> "22234", <br>
+       ];
      </code><br><br>
      If we desire to get the student id of Don we will use the following syntax: <br><br>
      <code>$student_id["Don"]; </code>
      </p></article></section>
 
-<!------Multidimentional Arrays-->
+  <!------Multidimentional Arrays-->
 
-  <section class="main-section" id="Multidimentional_Arrays"><header>Multidimentional Arrays </header><article>
-    <p>Multiple dimentional arrays are arrays that contain one or more arrays. This type of array stores another array at each index in place of a single element. In other words, each element in the array can be an array and hold sub arrays. </p><p>Dimentions indicate the number of indices needed to select an element. A two dimentional array will require two indices to select an element while a three dimentional array will require three indices to select an element. Below is an exampple of a two dimentional array:<pre><code>$multiarray = array(
-    array(1, 2),
-    array(3, 4)
-    ); </code></pre></p><p>Below is the breakdown of this array :<pre><code>
-  Array
-  (
-     [0]=> Array
-          (
-            [0]=>1
-              
-             [1]=>2
-          )
+  <section class="main-section" id="Multidimentional_Arrays">
+  <header>Multidimentional Arrays </header>
+    <article>
+     <p>Multiple dimentional arrays are arrays that contain one or more arrays. This
+	type of array stores another array at each index in place of a single element.
+	In other words, each element in the array can be an array and hold sub arrays. 
+	</p><p>Dimentions indicate the number of indices needed to select an element.
+	A two dimentional array will require two indices to select an element while a
+	three dimentional array will require three indices to select an element. Below 
+	is an exampple of a two dimentional array:<pre><code>$multiarray = array(
+          array(1, 2),
+          array(3, 4)
+        ); </code></pre></p><p>Below is the breakdown of this array :<pre><code>
+        Array
+         (
+           [0]=> Array
+             (
+               [0]=>1
+               
+               [1]=>2
+            )
            
-     [1]=> Array
-          (
+          [1]=> Array
+           (
             [0]=>3
             
             [1]=>4
-          )
-  )</code></pre>To access the number 2, we use $multiarray[0][1], while if we want to access the number 3, we use $multiarray[1][0].</p></artcile></section>
+           )
+        
+       )</code></pre>To access the number 2, we use $multiarray[0][1], while if we want
+       to access the number 3, we use $multiarray[1][0].</p></artcile></section>
 
-<!-------Sstrings---------->
+  <!-------Sstrings---------->
 
   <section class="main-section" id="Strings"><header>Strings</header>
-    
-    <article><p>Strings are variabkes that hold text. If you wanted to define someones name, the following syntax would be used: <br><br>
-    <code>$name ="Adam"; </code><br><br>
-   You can uses the <q>.</q> operator to conconate two strings. The example below illustrates this: <br><br> 
-   <code>$string1 ="I love"; <br>
-         $string2 ="PHP"; <br>
+    <article><p>Strings are variabkes that hold text. If you wanted to define
+      someones name, the following syntax would be used: <br><br>
+        <code>$name ="Adam"; </code><br><br>
+      You can uses the <q>.</q> operator to conconate two strings. The example
+      below illustrates this: <br><br> 
+        <code>$string1 ="I love"; <br>
+          $string2 ="PHP"; <br>
          $full_string = $string1 . $string2; <br>
-     echo $full_string;
-    </code><br><br>The statement above produces the string <q>I love PHP</q></p>
-    <p>PHP includes built in functions that can operate on strings. This includes
+         echo $full_string;
+        </code><br><br>The statement above produces the string <q>I love PHP</q></p>
+      <p>PHP includes built in functions that can operate on strings. This includes
       <div class="main-list">
       <ul>
-      <li>strlen()</li>             <li>substr()</li>
-      <li>strrev()</li>
+        <li>strlen()</li>             
+	<li>substr()</li>
+        <li>strrev()</li>
         </ul></div><br>
     <br>
-    The PHP function strlen() returns the length of the string in the parenthesis: <br><pre><code>
-&lt;?php
-    echo strlen("Hello World");
-?&gt; </code></pre>(This will output 12 because the string includes the space between the two words and the exclamation maark)
+    The PHP function strlen() returns the length of the string in the parenthesis: 
+    <br><pre><code>
+          &lt;?php
+          echo strlen("Hello World");
+         ?&gt; </code>
+        </pre>(This will output 12 because the string includes the space between the two
+    words and the exclamation maark)
     <br><br>
-    The PHP function substr() allows the user to return a portion of a string beginning with the index specified as follows:
-   <pre> 
-    <code>
-    &lt;php 
-    echo substr("Hello World, 1");
-    ?&gt;
-    </code></pre>(This will return ello World) because it cuts of the <code>H</code> which is at index 0. <br><br>
-    The PHP function strrev() will  return the string in reverse:<pre>
-    <code>
-      &lt;php 
-      echo strrev("Hello");
-      <code></pre>(This will return elloh).
-  </p></article></section> 
+    The PHP function substr() allows the user to return a portion of a string beginning
+    with the index specified as follows:
+     <pre> 
+      <code>
+        &lt;php 
+        echo substr("Hello World, 1");
+        ?&gt;
+      </code>
+    </pre>(This will return ello World) because it cuts of the <code>H</code> which
+    is at index 0. <br><br>
+    The PHP function strrev() will  return the string in reverse:
+    <pre>
+      <code>
+        &lt;php 
+        echo strrev("Hello");
+      <code>
+    </pre>(This will return elloh).
+    </p>
+    </article>
+  </section> 
     
   <!-----For Loops-------->
     
   <section class="main-section" id="For_Loops"><header>For Loops</header>
-    <article><p>For loops iterate through a block of code a specific number of times using an index. PHP has two types of For Loops, a simple type of for loop and a foreach loop. For loops are useful when we need to iterate over an array. The members of an array can be referred to using an index which changes with each iteratio. A simple for loop can be declared using the following syntax: <br><br>
-    <code>$numbers = array(0. 1, 2, 3, 4, 5];<br> for($i = 0; $i < count($numbers); $i++ ) {<br>
- $number = $number[$i]; <br>
- echo $number."\n"; <br>
- }     
- </code><br><br>
- The code above includes the initial statement of the for loop which defines 3 parts: <br>
- $i =0; which initializes the loop. <br>$i &lt; count($number); which is the conditional statemment. The loop will iterate as long as this is true; <br>
-$i++; which is the incremental statement of the loop.This can also be written as $i+=1; or $i = $i +1; <br></p>    
-<p>The foreach loop is used to loop through each key/value pair in array. The following is an example of a foreach loop: <br><br>
-  <code>
-    $age = array( <br>
-    <q>Peter</q> => 25, <br>
-    <q>Mike</q> =>  18, <br>
-    <q>Sarah</q> => 30<br>
-    ); <br><br>
-    foreach($age as $person=> $value) { <br>
-    echo "$person=>$value; <br>}</code>
+    <article><p>For loops iterate through a block of code a specific number of
+      times using an index. PHP has two types of For Loops, a simple type of
+      for loop and a foreach loop. For loops are useful when we need to iterate over
+      an array. The members of an array can be referred to using an index which changes
+      with each iteratio. A simple for loop can be declared using the following syntax:
+      <br><br>
+        <code>
+	  $numbers = array(0. 1, 2, 3, 4, 5];<br>
+	  for($i = 0; $i < count($numbers); $i++ ) {<br>
+          $number = $number[$i]; <br>
+          echo $number."\n"; <br>
+          }     
+       </code><br><br>
+     The code above includes the initial statement of the for loop which defines
+     3 parts: <br> $i =0; which initializes the loop. <br>$i &lt; count($number); which
+     is the conditional statemment. The loop will iterate as long as this is true; <br>
+     $i++; which is the incremental statement of the loop.This can also be written 
+     as $i+=1;or $i = $i +1; <br></p>    
+     <p>The foreach loop is used to loop through each key/value pair in array. The
+     following is an example of a foreach loop: <br><br>
+       <code>
+         $age = array( <br>
+         <q>Peter</q> => 25, <br>
+         <q>Mike</q> =>  18, <br>
+         <q>Sarah</q> => 30<br>
+         ); <br><br>
+         foreach($age as $person=> $value) { <br>
+         echo "$person=>$value; <br>}</code>
   
-</p></article></section>
+     </p>
+    </article>
+  </section>
     
  <!--------While Loops------->
     
 <section class="main-section" id="While_Loops"><header>While Loops</header>
-  <article><p>While loops are a block of code that executes as long as the condition specified in the loop remains true. For example, a function can be defined to perform mathematical operations or maniupulate strings or characters, or objects. <br><br>There are two types of while loops in PHP. The while loop that executes only when the specified condition is true and the do while loop that executes at least once and is repeated as long as that condition is true. The following examples ilustrate the syntax of the while loop and the do while loop:
-<br><br>
-  <code>
-    /*** while loop***/<br>
-    $x = 0; <br>
-    while($x < 10) { <br>
-    echo  $x; <br>
-    $x++; <br>
-   } 
- </code><br><br>
-  <code>
-    /***do while loop***/<br>
-  $x =0; <br>
-  do { <br>
-    echo $x; <br>
-    $++; <br>
- } while($ < 10)<br><br>
- </code>
-</p></article></section>
+  <article><p>While loops are a block of code that executes as long as the condition
+    specified in the loop remains true. For example, a function can be defined to 
+    perform mathematical operations or maniupulate strings or characters, or objects.
+    <br><br>There are two types of while loops in PHP. The while loop that executes only
+    when the specified condition is true and the do while loop that executes at least
+    once and is repeated as long as that condition is true. The following examples
+    ilustrate the syntax of the while loop and the do while loop:
+    <br><br>
+      <code>
+       /*** while loop***/<br>
+       $x = 0; <br>
+       while($x < 10) { <br>
+       echo  $x; <br>
+       $x++; <br>
+       } 
+     </code><br><br>
+     <code>
+      /***do while loop***/<br>
+        $x =0; <br>
+        do { <br>
+        echo $x; <br>
+        $++; <br>
+        } while($ < 10)<br><br>
+     </code>
+   </p>
+    </article>
+  </section>
     
- <!---------Functions---------->
+  <!---------Functions---------->
     
- <section class="main-section" id="Functions"><header>Functions</header><article><p>Functions are blocks of code that can be executed to perform operations on data or information in a program. The list below describles more detail about functions: <br><br>
-   <div class="main-list">
-   <ul>
-     <li>The blocks of statements in a function can be used repeatedly in a program   </li>
-     <li>Functions are executed when they are called</li>
-     <li>Functions recieve a list of arguments separated by commas </li>
-     <li>May or not return a value using the <code>return</code> statment </li>    
-     </ul></div></p>
+ <section class="main-section" id="Functions"><header>Functions</header>
+   <article><p>Functions are blocks of code that can be executed to perform
+     operations on data or information in a program. The list below describles
+     more detail about functions: <br><br>
+     <div class="main-list">
+     <ul>
+       <li>The blocks of statements in a function can be used repeatedly in a program </li>
+       <li>Functions are executed when they are called</li>
+       <li>Functions recieve a list of arguments separated by commas </li>
+       <li>May or not return a value using the <code>return</code> statment </li>    
+     </ul>
+     </div></p>
   <p> 
-   PHP contains two types of functions: built in functions((over 1000) and user defined functions. The syntax for user defined functions is: <br><br>
-   <code>
-     function nameFunction() { <br>
+   PHP contains two types of functions: built in functions((over 1000) and user defined 
+   functions. The syntax for user defined functions is: <br><br>
+     <code>
+       function nameFunction() { <br>
        Execute your code here; <br>
      } <br>
      </code> <br><br>
-The name of the function should represent what the function does. The following example illustretes a function that adds two numbers: <br><br>
-  <code>
-    &lt;?php  <br>
-    functipn addNum(int $x, int $y) { <br>
-    return $x + $y; <br>
-    } <br>
-    echo addNum(3, 4); <br>
-   ?&gt;
-   </code><br><br>The function <code>addNum</code> adds two integers. It has two paremeters $x and $y. The function is called by the echo statement and the parementers are replaced by integers. When parameters are replaced by values when the function is called they become arguments.<br><br>  When passing arguments in a funtion call, make sure they match the order and typ of the parameters in the function definition. <br><br>
+  The name of the function should represent what the function does. The following example 
+  illustretes a function that adds two numbers: <br><br>
+    <code>
+      &lt;?php  <br>
+      functipn addNum(int $x, int $y) { <br>
+      return $x + $y; <br>
+      } <br>
+      echo addNum(3, 4); <br>
+   ?  &gt;
+   </code><br><br>The function <code>addNum</code> adds two integers. It has two paremeters
+   $x and $y. The function is called by the echo statement and the parementers are replaced
+   by integers. When parameters are replaced by values when the function is called they
+   become arguments.<br><br>  When passing arguments in a funtion call, make sure they match
+   the order and typ of the parameters in the function definition. <br><br>
    
-   A complete listing of PHP built in functions is available in PHP Reference documentation. One of these functions is the <code>array()</code> function which is used in some of the examples in this document.
-</p></article></section>
+   A complete listing of PHP built in functions is available in PHP Reference documentation.
+   One of these functions is the <code>array()</code> function which is used in some of the
+   examples in this document.
+</p>
+    </article>
+  </section>
 
-<!----------Objects---------->
+  <!----------Objects---------->
 
-   <section class="main-section" id="Objects"><header>Objects</header>
-     <article><p>PHP is an object oriented language but many of its functins are not object oriented. Despite it object oriented nature, it does not have to be used as an object oriented language. Object oriented programming languages like PHP are based on the concepts of <q>Objects</q>, which contain specific properties and methods.</p><p> Properties are attributes or data that describe or provides us with specific details concerning an aspect of the object. The methods are operations that can be performed on the object. The interesting feature of an object in Object Oriented Programming is that its own methods can access and modify its properties or data. </p><p>A class is a template or container of an object so objects are instances of a class. In other words, a class is definition of an object and objects are instances of a class.  To define a class, use the keyword <code>class</code> followed by the name of the class. The name is followed by a pair of curly braces with the property and methods of the class defined in this class. The example below illustrates this: <br><br>
- <code>
- &lt?php <br>
- class Vegetables { <br>
- // properties <br>
-    public $name; <br>
+  <section class="main-section" id="Objects"><header>Objects</header>
+     <article><p>PHP is an object oriented language but many of its functins are
+     not object oriented. Despite it object oriented nature, it does not have to
+     be used as an object oriented language. Object oriented programming languages 
+     like PHP are based on the concepts of <q>Objects</q>, which contain specific properties
+     and methods.</p><p> Properties are attributes or data that describe or provides us with
+     specific details concerning an aspect of the object. The methods are operations that can
+     be performed on the object. The interesting feature of an object in Object Oriented
+     Programming is that its own methods can access and modify its properties or data. 
+     </p><p>A class is a template or container of an object so objects are instances of a
+     class. In other words, a class is definition of an object and objects are instances of
+     a class.  To define a class, use the keyword <code>class</code> followed by the name
+     of the class. The name is followed by a pair of curly braces with the property and
+     methods of the class defined in this class. The example below illustrates this:
+     <br><br>
+       <code>
+         &lt?php <br>
+         class Vegetables { <br>
+         // properties <br>
+         public $name; <br>
           <br>
-  //methods <br>
-    function setName($name){ <br>
-    this->name=$name; <br>
-   } <br>
-  function getName(){ <br>
-   return $this->name; <br>
-   }  <br><br>
+         //methods <br>
+         function setName($name){ <br>
+         this->name=$name; <br>
+         } <br>
+         function getName(){ <br>
+         return $this->name; <br>
+         }  <br><br>
    
-   // instatiate object <br>
-   $corn = new Vegetable(); <br>
-   corn->setName("Corn"); <br>
-   echo $corn->getName(); <br>
-   ?&gt; <br>
-   }
-   </code>
- </p></article></section>
+        // instatiate object <br>
+        $corn = new Vegetable(); <br>
+        corn->setName("Corn"); <br>
+        echo $corn->getName(); <br>
+       ?&gt; <br>
+        }
+    </code>
+    </p>
+    </article>
+  </section>
 
-<!--------Exceptions--------->
+  <!--------Exceptions--------->
 
   <section class="main-section" id="Exceptions"><header>Exceptions</header>
-    
-    <article><p>PHP exceptions are objects that describe errors or unexplained behaviour in the php script. This object contains information about the unexpected error or unexpected behaviour encountered by the function. <br><br> An exception can be thrown(throw) and caught(catch); each <code>throy</code> must have at least one corresponding <code>catch</code>. Exceptions can be thrown by<br><br>
-    <div class="main-list">
-    <ul>
-      <li>PHP Functions</li>
-      <li>User defined functions</li>
-      <li>Classes</li></ul></div><br><br>
-    A <code>throw</code> statement allows methods or user defined functions to throw an exception. Statements following the <code>throw </code>statement will not be executed once an exception is thrown. Once a throw is encountered, PHP will look for a matching catch block. <br><br>In a block of code with no catch statement, the exception is not caught. If an exception is not caught, a fatal error occurs with an <q>Uncaught Exception</q> message.  A try catch statement will look as presented below: 
-    <pre><code>
-      try {
-      code to throw exeption goes here
-    } catch(Exception $e) {
-      Run code when exception is caught here
-    }</code></pre>Catch blocks indicate the type of expception that should be caught and the variable used to access the exceptions. In this example, the type of exception is <code>Exception </code> and the variable used to access it is <code>$e</code>.There are different classes of exceptions and multiple catch blocks can be used to catch them.<br><br><code>PHP 5.5 </code>introduced a <code>finally</code> block to specified after or instead of the <code>catch</code> blocks. Code within these blocks always execute(even if an exception has not been caught). The presence of this block makes the <code>catch</code> block optional. The syntax for this is as folows:<pre>
-<code>try {
-     code to throw exceptions
-     }catch(Exception $e) {
-     run when eception is caught
-     }finally {
-      Always run whether expception caught
-     }</code></pre>
- </p></article></section></main></div>
+    <article><p>PHP exceptions are objects that describe errors or unexplained
+      behaviour in the php script. This object contains information about the unexpected 
+      error or unexpected behaviour encountered by the function. <br><br> An exception can
+      be thrown(throw) and caught(catch); each <code>throy</code> must have at least one
+      corresponding <code>catch</code>. Exceptions can be thrown by<br><br>
+      <div class="main-list">
+      <ul>
+        <li>PHP Functions</li>
+        <li>User defined functions</li>
+        <li>Classes</li></ul></div><br><br>
+      A <code>throw</code> statement allows methods or user defined functions to throw an
+      exception. Statements following the <code>throw </code>statement will not be executed 
+      once an exception is thrown. Once a throw is encountered, PHP will look for a matching 
+      catch block. <br><br>In a block of code with no catch statement, the exception is not 
+      caught. If an exception is not caught, a fatal error occurs with an <q>Uncaught Exception</q>
+      message.  A try catch statement will look as presented below: 
+       <pre>
+         <code>
+           try {
+           code to throw exeption goes here
+           } catch(Exception $e) {
+          Run code when exception is caught here
+    }    </code>
+        </pre>Catch blocks indicate the type of expception that should be caught and the 
+    variable used to access the exceptions. In this example, the type of exception is <code>Exception
+	    </code> and the variable used to access it is <code>$e</code>.There are different classes
+    of exceptions and multiple catch blocks can be used to catch them.<br><br><code>PHP 5.5 </code>
+    introduced a <code>finally</code> block to specified after or instead of the <code>catch</code>
+    blocks. Code within these blocks always execute(even if an exception has not been caught). 
+    The presence of this block makes the <code>catch</code> block optional. The syntax for this is
+    as folows:
+      <pre>
+        <code>
+	  try {
+          code to throw exceptions
+          }catch(Exception $e) {
+          run when eception is caught
+         }finally {
+         Always run whether expception caught
+       }<
+       /code>
+      </pre>
+   </p></article></section></main></div>
   
  </body>
 </html>
